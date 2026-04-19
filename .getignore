@@ -1,0 +1,15 @@
+# Large data files
+*.csv
+*.npy
+*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+venv311/
+
+# OS
+.DS_Store
+Thumbs.db
