@@ -179,11 +179,6 @@ st.write(
     f"Temp: **{temperature}°C** | Wind: **{wind_speed} m/s**"
 )
 
-if "LSTM" in model_choice:
-    st.info(
-        "ℹ️ LSTM running in simulation mode. "
-        "Full TensorFlow inference available on cloud deployment."
-    )
 
 # ── ROW 1: Metric Cards ───────────────────────────────────────
 m1, m2, m3, m4 = st.columns(4)
