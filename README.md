@@ -33,16 +33,18 @@ forecasting accuracy compared to current published benchmarks?
 | Model | MAE (MW) | RMSE (MW) | sMAPE (%) |
 |---|---|---|---|
 | **XGBoost + Lags ★** | **333** | **457** | **1.1** |
-| LSTM | 466 | 520 | 1.4 |
+| LSTM | 385 | 520 | 1.4 |
 | TFT (Improved) | 703 | 1,013 | 2.6 |
 | Prophet (Improved) | 2,330 | 2,890 | 8.2 |
+| Prophet (Basic) | 2,567 | 3,201 | 9.3 |
+| XGBoost (Basic) | 3,799 | 4,280 | 13.3 |
 | N-BEATSx | 6,340 | 7,513 | 26.4 |
 
 ### Test Set (2022-2025)
 | Model | MAE (MW) | RMSE (MW) | sMAPE (%) |
 |---|---|---|---|
 | **XGBoost + Lags ★** | **365** | **501** | **1.5** |
-| LSTM | 650 | 826 | 2.9 |
+| LSTM | 707 | 927 | 3.0 |
 | TFT | 1,143 | 1,527 | 4.7 |
 | Prophet (Improved) | 3,110 | 3,841 | 15.5 |
 | N-BEATSx | 4,114 | 4,926 | 14.7 |
@@ -104,12 +106,13 @@ The dataset is too large for GitHub. Download from:
 ---
 
 ## 🤖 Models Implemented
-
 | Model | Type | Val MAE | Test MAE |
 |---|---|---|---|
-| Prophet | Statistical baseline | 2,330 MW | 3,110 MW |
+| Prophet (Basic) | Statistical baseline | 2,567 MW | — |
+| Prophet (Improved) | Statistical improved | 2,330 MW | 3,110 MW |
+| XGBoost (Basic) | ML baseline | 3,799 MW | — |
 | XGBoost + Lags | ML Champion ★ | 333 MW | 365 MW |
-| LSTM | Deep learning | 466 MW | 650 MW |
+| LSTM | Deep learning | 385 MW | 707 MW |
 | N-BEATSx | Deep learning exog | 6,340 MW | 4,114 MW |
 | TFT | Transformer | 703 MW | 1,143 MW |
 
